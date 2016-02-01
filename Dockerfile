@@ -1,7 +1,7 @@
 
 FROM ubuntu:14.04
 
-MAINTAINER Phillip Bailey <phillip@bailey.st>
+MAINTAINER Alex <mailoman@inbox.ru>
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -25,6 +25,6 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 copy app /var/www/app
 RUN pip install -r /var/www/app/requirements.txt
 
-#EXPOSE 80
+EXPOSE 80
 
 CMD ["/usr/bin/supervisord"]
