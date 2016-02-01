@@ -5,6 +5,6 @@ keywords: docker,flask,python
 type: LAMP
 documentation: ''
 images:
-- name: mailoman_docker-flask_latest
+- name: mailoman_docker-flask
   source: mailoman/docker-flask:latest
   type: Default
