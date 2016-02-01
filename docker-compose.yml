@@ -1,0 +1,12 @@
+source:
+    build: .
+app:
+    build: .
+    volumes_from:
+        - source
+    ports:
+        - "22"
+        - "80"
+    expose:
+        - "22"
+        - "80"
