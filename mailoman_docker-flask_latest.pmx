@@ -1,0 +1,10 @@
+---
+name: mailoman_docker-flask_latest
+description: My micro service app
+keywords: docker,flask,python
+type: LAMP
+documentation: ''
+images:
+- name: p0bailey_docker-flask_latest
+  source: p0bailey/docker-flask:latest
+  type: Default
