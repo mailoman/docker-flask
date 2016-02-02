@@ -8,3 +8,6 @@ images:
 - name: mailoman_docker-flask
   source: mailoman/docker-flask:latest
   type: Default
+  ports:
+  - host_port: 8080
+    container_port: 80
