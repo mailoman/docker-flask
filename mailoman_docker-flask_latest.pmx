@@ -1,13 +1,17 @@
 ---
 name: mailoman_docker-flask_latest
-description: My micro service app
-keywords: docker,flask,python
+description: ''
+keywords: ''
 type: LAMP
-documentation: 'desc'
+documentation: desc
 images:
 - name: mailoman_docker-flask_latest
   source: mailoman/docker-flask:latest
   type: Default
   ports:
-  - host_port: 8080
-    container_port: 80
+  - host_port: '8080'
+    container_port: '80'
+    proto: TCP
+  volumes:
+  - host_path: "/home/core/projects/docker-flask"
+    container_path: "/var/www"
