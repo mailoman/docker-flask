@@ -3,10 +3,10 @@ name: mailoman_docker-flask_latest
 description: My micro service app
 keywords: docker,flask,python
 type: LAMP
-documentation: ''
+documentation: 'desc'
 images:
 - name: mailoman_docker-flask
-  source: mailoman/docker-flask
+  source: mailoman/docker-flask:master
   type: Default
   ports:
   - host_port: 8080
