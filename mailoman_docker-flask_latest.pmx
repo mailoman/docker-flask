@@ -5,8 +5,8 @@ keywords: docker,flask,python
 type: LAMP
 documentation: 'desc'
 images:
-- name: mailoman_docker-flask
-  source: mailoman/docker-flask
+- name: mailoman_docker-flask_latest
+  source: mailoman/docker-flask:latest
   type: Default
   ports:
   - host_port: 8080
