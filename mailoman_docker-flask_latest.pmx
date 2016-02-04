@@ -6,7 +6,7 @@ type: LAMP
 documentation: desc
 images:
 - name: mailoman_docker-flask
-  source: mailoman/docker-flask:latest
+  source: mailoman/docker-flask
   type: Default
   ports:
   - host_port: '8080'
