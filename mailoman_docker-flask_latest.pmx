@@ -5,7 +5,7 @@ keywords: ''
 type: LAMP
 documentation: desc
 images:
-- name: mailoman_docker-flask_latest
+- name: mailoman_docker-flask
   source: mailoman/docker-flask:latest
   type: Default
   ports:
