@@ -6,10 +6,12 @@ MAINTAINER Alex <mailoman2008@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
-RUN apt-get -y install nginx  sed python-pip python-dev uwsgi-plugin-python supervisor
+RUN apt-get -y install curl nginx sed python-pip python-dev uwsgi-plugin-python supervisor
+
+RUN pip install MySQL-python Flask-SQLAlchemy Flask-Migrate flask-cli Flask-Security Flask-Admin Flask-JSON Flask-Autodoc
 
 RUN mkdir -p /var/log/nginx/app
-RUN mkdir -p /var/log/uwsgi/app/
+RUN mkdir -p /var/log/uwsgi/app
 
 
 RUN rm /etc/nginx/sites-enabled/default
